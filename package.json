@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/JJIvan/gulpTest/issues"
   },
-  "homepage": "https://github.com/JJIvan/gulpTest#readme"
+  "homepage": "https://github.com/JJIvan/gulpTest#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1"
+  }
 }
