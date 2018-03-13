@@ -23,6 +23,12 @@ gulp.task('minify', function() {
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('dist'));
 });
+
+gulp.task('vendor', function() {
+  return gulp.src('./node_modules/jquery/dist/jquery.min.js')
+    .pipe(concat('vendor.js'))
+    .pipe(gulp.dest('./dist/'));
+});
 /*-------------------------------------------------------------*/
 
 
@@ -72,5 +78,5 @@ gulp.task('connect', function() {
 });
 
 /*--------------------------------------------------------*/
-gulp.task('default',['concat','sass','minify'])
+gulp.task('default',['vendor','concat','sass','minify'])
 gulp.task('run',['Wconcat','Wsass','connect','WhtmlGO'])

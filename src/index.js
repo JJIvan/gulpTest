@@ -1,1 +1,5 @@
-var ivan = 'hello gulp'
+var ivan = 'ivan'
+
+$(document).ready(function() {
+ 
+});
